@@ -29,7 +29,9 @@ cacheSolve <- function(x, ...) {
                             ## the inverse of 'x'
   if(!is.null(inv)) { ## here i check if the inverse of the function exists
     
-    return(inv)  ## and then the Inverse
+    message("getting cached data")
+    
+    return(inv)  ## and then return the Inverse
   }
   
   data <- x$get() ## here we are in the case where there is NO cached data,
